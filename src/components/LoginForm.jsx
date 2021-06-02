@@ -9,7 +9,7 @@ const LoginForm = () => {
         e.preventDefault(); // so that browser doesn't refresh
         // username and password => chatengin -> give messages
         // error -> try with new username...
-        const authObject = {'Project-ID' : "1e1bc485-333d-4fce-bcce-31819a8b15f6", 'User-Name': username, 'User-Secret': password}
+        const authObject = {'Project-ID' : (Enter Id here), 'User-Name': username, 'User-Secret': password}
         try {
             await axios.get('https://api.chatengine.io/chats',{headers: authObject});
             localStorage.setItem('username',username);
